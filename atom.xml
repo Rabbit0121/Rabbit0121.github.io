@@ -6,7 +6,7 @@
   <link href="https://rabbit0121.github.io/atom.xml" rel="self"/>
   
   <link href="https://rabbit0121.github.io/"/>
-  <updated>2023-11-16T10:56:02.898Z</updated>
+  <updated>2023-11-16T11:34:28.154Z</updated>
   <id>https://rabbit0121.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>公告栏</title>
+    <link href="https://rabbit0121.github.io/2023/11/16/board/"/>
+    <id>https://rabbit0121.github.io/2023/11/16/board/</id>
+    <published>2023-11-16T11:25:38.557Z</published>
+    <updated>2023-11-16T11:34:28.154Z</updated>
+    
+    <content type="html"><![CDATA[<p>这里发布自本站建立以来，本站的功能性更新与重大内容更新</p><h2 id="2023年"><a href="#2023年" class="headerlink" title="2023年"></a>2023年</h2><ul><li>2023年11月16日<ul><li>网站建成，托管到github</li><li>添加头像、外部链接</li><li>实现了部分菜单（标签、分类、归档）</li><li>测试了文章发布功能</li><li>添加了字数统计、阅读时长功能</li></ul></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这里发布自本站建立以来，本站的功能性更新与重大内容更新&lt;/p&gt;
+&lt;h2 id=&quot;2023年&quot;&gt;&lt;a href=&quot;#2023年&quot; class=&quot;headerlink&quot; title=&quot;2023年&quot;&gt;&lt;/a&gt;2023年&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;2023年11月16日&lt;ul&gt;
+&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>MyNewPost</title>
     <link href="https://rabbit0121.github.io/2023/11/16/MyNewPost/"/>
     <id>https://rabbit0121.github.io/2023/11/16/MyNewPost/</id>
-    <published>2023-11-16T06:11:18.000Z</published>
-    <updated>2023-11-16T10:56:02.898Z</updated>
+    <published>2023-11-16T06:11:18.313Z</published>
+    <updated>2023-11-16T11:33:42.529Z</updated>
     
     <content type="html"><![CDATA[<p><strong>该博客部分图片源自 <a href="https://www.icourse163.org/course/SDU-1449603168?tid=1463289532">慕课—山东大学《密码学引论》</a></strong></p><h1 id="发展阶段"><a href="#发展阶段" class="headerlink" title="发展阶段"></a>发展阶段</h1><ol><li>古代~1949，朴素的古典密码：密码的设计主要依赖人们的直觉和经验。</li></ol><ul><li>如古希腊斯巴达密码器、凯撒密码、维吉尼亚密码（凯撒密码的升级版）以及我国古代的虎符、阴书等。</li><li>二战时期的密码：如$Enigma$密码机、日本$“$紫密$”$等。</li></ul><ol start="2"><li>1949~1975，密码学理论开始得到发展。</li></ol><ul><li>Shannon发表《保密系统的通信理论》，建立私钥密码系统的理论基础，使密码学成为一门学科。</li><li>IBM技术报告</li></ul><ol start="3"><li>1976$至今：密码理论和应用得到蓬勃发展。</li></ol><ul><li>DES$加密成为标准，该标准是历史上第一个公开算法技术细节的商用密码标准。</li><li>Diffie、Hellman发表 《密码学的新方向》</li><li>Rivest、Shamir、Adleman提出RSA密码体制。<span id="more"></span></li></ul><h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><ul><li>明文$(plaintext)$：未加密的消息</li><li>密文($cipherttext$)：加密后的消息</li><li>发送者($sender$)：生成并发送密文</li><li>接收者($receiver$)：接受并解密密文</li><li>加密($encryption$)：讲明文变换成密文的过程</li><li>解密($decryption$)：由密文恢复成明文的过程</li><li>加密算法($Encryption\ Algorithm$)：发送者对铭文进行加密时所采用的规则</li><li>解密算法($Decryption\ Agorithm$)：接收者对密文进行解密时所采用的规则</li><li>密钥($key$)：加密与解密通常在一组$key$的控制下进行，加密密钥($Encryption\ Key$)、解密密钥($Decryption\ Key$)</li></ul><h1 id="密码体制的分类"><a href="#密码体制的分类" class="headerlink" title="密码体制的分类"></a>密码体制的分类</h1><h2 id="根据密钥-key-分类"><a href="#根据密钥-key-分类" class="headerlink" title="根据密钥($key$)分类"></a>根据密钥($key$)分类</h2><ul><li>对称密码$(Symmetric\ Cipher)$：加密密钥和解密密钥相等，即$Encryption\ Key&#x3D;Decryption\ Key$，也称为私钥$(Private\ Key)$密码</li><li>非对称密码$(Asymmetric\ Cipher)$：加密密钥和解密密钥不等，即$Encryption\ Key≠Decryption\ Key$，也称为公钥$(Public\ Key)$密码</li></ul><h2 id="根据加密方式划分"><a href="#根据加密方式划分" class="headerlink" title="根据加密方式划分"></a>根据加密方式划分</h2><ul><li>流密码：对明文进行逐比特加密</li><li>分组密码：顾名思义，对明文先分组后加密</li></ul><h1 id="密码的安全性"><a href="#密码的安全性" class="headerlink" title="密码的安全性"></a>密码的安全性</h1><h2 id="攻击方法"><a href="#攻击方法" class="headerlink" title="攻击方法"></a>攻击方法</h2><h3 id="按攻击类型进行划分"><a href="#按攻击类型进行划分" class="headerlink" title="按攻击类型进行划分"></a>按攻击类型进行划分</h3><ul><li>被动攻击：攻击者能动性较弱，主要有监听,截获密文后分析等手段</li><li>主动攻击：攻击者能动性较强，主要有串扰系统，删除，更改，增填，重放，伪造等手段</li></ul><h3 id="按攻击者已具备的条件"><a href="#按攻击者已具备的条件" class="headerlink" title="按攻击者已具备的条件"></a>按攻击者已具备的条件</h3><ul><li>唯密文攻击 $(Ciphertext\ Only\ Attack)$：攻击者仅掌握密文，对密文进行分析以获得密钥进而分析出明文</li><li>已知明文攻击$(Known\ Plaintext\ Attack)$：攻击者掌握若干组明文-密文对，以此来分析获得密钥或目标明文</li><li>选择明文攻击$(Chosen\ Plaintext\ Attack)$：相较于已知明文攻击，攻击者能动性更强，从已知的明文-密文对中选择若干组进行分析。如二战期间美国破解日军$“$紫密$”$算法。</li><li>选择密文攻击$(Chosen\ Ciphertext\ Attack)$：除了已知明文攻击的基础，攻击者还可以任意制造或者选择一些密文，并得到其解密后的明文</li></ul><h2 id="密码学安全观点"><a href="#密码学安全观点" class="headerlink" title="密码学安全观点"></a>密码学安全观点</h2><ul><li>密码系统安全性基于密钥的保密性,而非算法的保密性。即算法应该是公开的，密钥则是要保密的。</li><li>破译密码的成本应超过加密信息的价值，破译的时间超过该信息的生命周期。</li></ul>]]></content>
     
@@ -51,6 +74,8 @@
     
     
     
+    
+    <category term="密码学" scheme="https://rabbit0121.github.io/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
     
   </entry>
   
