@@ -6,7 +6,7 @@
   <link href="https://rabbit0121.github.io/atom.xml" rel="self"/>
   
   <link href="https://rabbit0121.github.io/"/>
-  <updated>2023-11-16T11:34:28.154Z</updated>
+  <updated>2023-11-16T11:33:42.529Z</updated>
   <id>https://rabbit0121.github.io/</id>
   
   <author>
@@ -17,32 +17,9 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>公告栏</title>
-    <link href="https://rabbit0121.github.io/2023/11/16/board/"/>
-    <id>https://rabbit0121.github.io/2023/11/16/board/</id>
-    <published>2023-11-16T11:25:38.557Z</published>
-    <updated>2023-11-16T11:34:28.154Z</updated>
-    
-    <content type="html"><![CDATA[<p>这里发布自本站建立以来，本站的功能性更新与重大内容更新</p><h2 id="2023年"><a href="#2023年" class="headerlink" title="2023年"></a>2023年</h2><ul><li>2023年11月16日<ul><li>网站建成，托管到github</li><li>添加头像、外部链接</li><li>实现了部分菜单（标签、分类、归档）</li><li>测试了文章发布功能</li><li>添加了字数统计、阅读时长功能</li></ul></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;这里发布自本站建立以来，本站的功能性更新与重大内容更新&lt;/p&gt;
-&lt;h2 id=&quot;2023年&quot;&gt;&lt;a href=&quot;#2023年&quot; class=&quot;headerlink&quot; title=&quot;2023年&quot;&gt;&lt;/a&gt;2023年&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;2023年11月16日&lt;ul&gt;
-&lt;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>MyNewPost</title>
-    <link href="https://rabbit0121.github.io/2023/11/16/MyNewPost/"/>
-    <id>https://rabbit0121.github.io/2023/11/16/MyNewPost/</id>
+    <link href="https://rabbit0121.github.io/2023/11/16/test/"/>
+    <id>https://rabbit0121.github.io/2023/11/16/test/</id>
     <published>2023-11-16T06:11:18.313Z</published>
     <updated>2023-11-16T11:33:42.529Z</updated>
     
