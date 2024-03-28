@@ -19,25 +19,31 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"rabbit0121.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="夏天有着迟暮的霞光，正如晚来的你皆是笑意">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Rabbit">
-<meta property="og:url" content="https://rabbit0121.github.io/index.html">
+    <meta name="description" content="CF1948C Path Arrow题目链接：CF1948C Path Arrow 大致题意给出一个由 ‘ &lt; ‘ 和 ‘ &gt; ‘ 组成的 $2×n$ 的地图，其中 ‘ &lt; ‘ 和 ‘ &gt; ‘ 代表前进方向，问机器人从 $(1,1)$ 出发能否到达 $(2,n)$ 处。 每秒钟，以下两个动作依次发生：  首先，机器人向左、右、下或上移动 (它不能尝试走出网格，也不能跳过移">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello World">
+<meta property="og:url" content="https://rabbit0121.github.io/2024/03/28/CodeForces_ConstructAlgorithm_1/index.html">
 <meta property="og:site_name" content="Rabbit">
-<meta property="og:description" content="夏天有着迟暮的霞光，正如晚来的你皆是笑意">
+<meta property="og:description" content="CF1948C Path Arrow题目链接：CF1948C Path Arrow 大致题意给出一个由 ‘ &lt; ‘ 和 ‘ &gt; ‘ 组成的 $2×n$ 的地图，其中 ‘ &lt; ‘ 和 ‘ &gt; ‘ 代表前进方向，问机器人从 $(1,1)$ 出发能否到达 $(2,n)$ 处。 每秒钟，以下两个动作依次发生：  首先，机器人向左、右、下或上移动 (它不能尝试走出网格，也不能跳过移">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-03-28T13:13:59.291Z">
+<meta property="article:modified_time" content="2024-03-28T13:19:33.048Z">
 <meta property="article:author" content="Rabbit">
+<meta property="article:tag" content="Constructive Algorithms">
+<meta property="article:tag" content="字符串">
+<meta property="article:tag" content="BFS">
+<meta property="article:tag" content="XOR">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://rabbit0121.github.io/">
+<link rel="canonical" href="https://rabbit0121.github.io/2024/03/28/CodeForces_ConstructAlgorithm_1/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://rabbit0121.github.io/2024/03/28/CodeForces_ConstructAlgorithm_1/","path":"2024/03/28/CodeForces_ConstructAlgorithm_1/","title":"Hello World"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Rabbit</title>
+<title>Hello World | Rabbit</title>
   
 
 
@@ -71,7 +77,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Rabbit</h1>
+      <p class="site-title">Rabbit</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -97,7 +103,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -110,6 +116,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CF1948C-Path-Arrow"><span class="nav-number">1.</span> <span class="nav-text">CF1948C Path Arrow</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E8%87%B4%E9%A2%98%E6%84%8F"><span class="nav-number">1.1.</span> <span class="nav-text">大致题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="nav-number">1.2.</span> <span class="nav-text">解题思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81"><span class="nav-number">1.3.</span> <span class="nav-text">实现代码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CF1948A-Special-Characters"><span class="nav-number">2.</span> <span class="nav-text">CF1948A Special Characters</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E8%87%B4%E9%A2%98%E6%84%8F-1"><span class="nav-number">2.1.</span> <span class="nav-text">大致题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-1"><span class="nav-number">2.2.</span> <span class="nav-text">解题思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81-1"><span class="nav-number">2.3.</span> <span class="nav-text">实现代码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CF1944B-Equal-XOR"><span class="nav-number">3.</span> <span class="nav-text">CF1944B Equal XOR</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E8%87%B4%E9%A2%98%E6%84%8F-2"><span class="nav-number">3.1.</span> <span class="nav-text">大致题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-2"><span class="nav-number">3.2.</span> <span class="nav-text">解题思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81-2"><span class="nav-number">3.3.</span> <span class="nav-text">实现代码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CF1935B-Informatics-in-MAC"><span class="nav-number">4.</span> <span class="nav-text">CF1935B Informatics in MAC</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E8%87%B4%E9%A2%98%E6%84%8F-3"><span class="nav-number">4.1.</span> <span class="nav-text">大致题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-3"><span class="nav-number">4.2.</span> <span class="nav-text">解题思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81-3"><span class="nav-number">4.3.</span> <span class="nav-text">实现代码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CF1935A-Entertainment-in-MAC"><span class="nav-number">5.</span> <span class="nav-text">CF1935A Entertainment in MAC</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E8%87%B4%E9%A2%98%E6%84%8F-4"><span class="nav-number">5.1.</span> <span class="nav-text">大致题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-4"><span class="nav-number">5.2.</span> <span class="nav-text">解题思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81-4"><span class="nav-number">5.3.</span> <span class="nav-text">实现代码</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -159,16 +166,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://rabbit0121.github.io/2024/03/28/CodeForces_ConstructAlgorithm_1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -182,13 +190,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Rabbit">
+      <meta itemprop="name" content="Hello World | Rabbit">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/03/28/CodeForces_ConstructAlgorithm_1/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Hello World
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -239,8 +247,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <!--@[TOC](CodeForces构造算法（Constructive Algorithms）合集（一）) -->
+    <div class="post-body" itemprop="articleBody"><!--@[TOC](CodeForces构造算法（Constructive Algorithms）合集（一）) -->
 <h1 id="CF1948C-Path-Arrow"><a href="#CF1948C-Path-Arrow" class="headerlink" title="CF1948C Path Arrow"></a>CF1948C Path Arrow</h1><p>题目链接：<a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/1948/C">CF1948C Path Arrow</a></p>
 <h2 id="大致题意"><a href="#大致题意" class="headerlink" title="大致题意"></a>大致题意</h2><p>给出一个由 ‘ &lt; ‘ 和 ‘ &gt; ‘ 组成的 $2×n$ 的地图，其中 ‘ &lt; ‘ 和 ‘ &gt; ‘ 代表前进方向，问机器人从 $(1,1)$ 出发能否到达 $(2,n)$ 处。</p>
 <p>每秒钟，以下两个动作依次发生：</p>
@@ -327,7 +334,6 @@
 <li>如果 $s &gt; s’$，输出反转后的字符串。</li>
 </ul>
 <h2 id="实现代码-4"><a href="#实现代码-4" class="headerlink" title="实现代码"></a>实现代码</h2><figure class="highlight c"><figcaption><span>++</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line">using namespace <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">	<span class="type">int</span> t;<span class="built_in">cin</span>&gt;&gt;t;</span><br><span class="line">	<span class="keyword">while</span>(t--) &#123;</span><br><span class="line">		<span class="type">int</span> n;<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">		<span class="built_in">string</span> s;<span class="built_in">cin</span>&gt;&gt;s;</span><br><span class="line">		<span class="type">bool</span> flag=<span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;s.length();i++) &#123;</span><br><span class="line">			<span class="keyword">if</span>(s[i]==s[s.length()<span class="number">-1</span>-i]) &#123;</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(s[i]&gt;s[s.length()<span class="number">-1</span>-i]) &#123;</span><br><span class="line">				flag=<span class="literal">false</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(s[i]&lt;s[s.length()<span class="number">-1</span>-i]) &#123;</span><br><span class="line">				flag=<span class="literal">true</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(!flag) &#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> i=s.length()<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--) <span class="built_in">cout</span>&lt;&lt;s[i];</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;s&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="built_in">cout</span>&lt;&lt;s&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;		  	 	   		    			   	 	  	</span><br></pre></td></tr></table></figure>
-      
     </div>
 
     
@@ -335,220 +341,62 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://rabbit0121.github.io/2023/11/16/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/th.jpg">
-      <meta itemprop="name" content="Rabbit">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Rabbit">
-      <meta itemprop="description" content="夏天有着迟暮的霞光，正如晚来的你皆是笑意">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Rabbit">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/11/16/test/" class="post-title-link" itemprop="url">Test</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2023-11-16 14:11:18" itemprop="dateCreated datePublished" datetime="2023-11-16T14:11:18+08:00">2023-11-16</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-30 12:56:06" itemprop="dateModified" datetime="2023-11-30T12:56:06+08:00">2023-11-30</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">密码学</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>1.4k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><strong>该博客部分图片源自 <a target="_blank" rel="noopener" href="https://www.icourse163.org/course/SDU-1449603168?tid=1463289532">慕课—山东大学《密码学引论》</a></strong></p>
-<h1 id="发展阶段"><a href="#发展阶段" class="headerlink" title="发展阶段"></a>发展阶段</h1><ol>
-<li>古代~1949，朴素的古典密码：密码的设计主要依赖人们的直觉和经验。</li>
-</ol>
+<div class="post-copyright">
 <ul>
-<li>如古希腊斯巴达密码器、凯撒密码、维吉尼亚密码（凯撒密码的升级版）以及我国古代的虎符、阴书等。</li>
-<li>二战时期的密码：如$Enigma$密码机、日本$“$紫密$”$等。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/11/16/test/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Rabbit
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://rabbit0121.github.io/2024/03/28/CodeForces_ConstructAlgorithm_1/" title="Hello World">https://rabbit0121.github.io/2024/03/28/CodeForces_ConstructAlgorithm_1/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Constructive-Algorithms/" rel="tag"># Constructive Algorithms</a>
+              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" rel="tag"># 字符串</a>
+              <a href="/tags/BFS/" rel="tag"># BFS</a>
+              <a href="/tags/XOR/" rel="tag"># XOR</a>
+          </div>
+
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/11/16/test/" rel="prev" title="Test">
+                  <i class="fa fa-angle-left"></i> Test
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://rabbit0121.github.io/2023/11/16/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/th.jpg">
-      <meta itemprop="name" content="Rabbit">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Rabbit">
-      <meta itemprop="description" content="夏天有着迟暮的霞光，正如晚来的你皆是笑意">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Rabbit">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/11/16/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2023-11-16 12:23:08" itemprop="dateCreated datePublished" datetime="2023-11-16T12:23:08+08:00">2023-11-16</time>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>367</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 
