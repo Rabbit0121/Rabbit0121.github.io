@@ -2157,7 +2157,9 @@ pre code {
   margin-top: 20px;
 }
 .category-all-page .category-list {
-  list-style-type: square;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .category-all-page .category-list-item {
   margin: 5px 10px;
@@ -2173,6 +2175,9 @@ pre code {
 }
 .category-all-page .category-list-child {
   padding-left: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .event-list hr {
   background: #222;
