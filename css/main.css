@@ -2174,7 +2174,7 @@ pre code {
   content: ') ';
 }
 .category-all-page .category-list-child {
-  padding-left: 10px;
+  padding-left: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2664,6 +2664,6 @@ header.header {
     padding: 12px;
   }
   .comments {
-    padding: 20px 12px;
+    padding: 10px 12px;
   }
 }
