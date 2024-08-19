@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Haojie Wu(武浩杰)"
+title                    : "Haojie Wu (武浩杰)"
 title_separator          : "-"
 name                     : &name "Haojie Wu"
 description              : &description "personal description"
