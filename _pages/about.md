@@ -22,7 +22,16 @@ Research Interest
 
 Education
 -----
-- 
+![School Logo]()  
+**Shandong University**  
+M.Eng. School of Cyber Science and Technology, Qingdao
+2023.09 - now
+
+![School Logo](path_to_logo_image)  
+**Shihezi University**  
+B.Eng. in College of Information Science and Technology, Shihezi  
+2019.09 - 2023.06
+
 
 <!--
 
