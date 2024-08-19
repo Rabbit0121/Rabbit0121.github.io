@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a first-year master's student at the [School of Cyber Science and Technology at Shandong University](https://cst.qd.sdu.edu.cn/), hosted by [Tianshuo Cong](https://tianshuocong.github.io/) and [Guoyan Zhang](https://faculty.sdu.edu.cn/zhangguoyan/zh_CN/kyxm/538871/list/index.htm).
+I am currently a first-year master student at the [School of Cyber Science and Technology at Shandong University](https://cst.qd.sdu.edu.cn/) hosted by [Tianshuo Cong](https://tianshuocong.github.io/) and [Guoyan Zhang](https://faculty.sdu.edu.cn/zhangguoyan/zh_CN/kyxm/538871/list/index.htm).
 
 Contact
 -----
