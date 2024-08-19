@@ -22,16 +22,52 @@ Research Interest
 
 Education
 -----
-![School Logo]()  
-**Shandong University**  
-M.Eng. School of Cyber Science and Technology, Qingdao
+- **Shandong University**  
+M.Eng. in [School of Cyber Science and Technology](https://cst.qd.sdu.edu.cn/), Qingdao  
 2023.09 - now
 
-![School Logo](path_to_logo_image)  
-**Shihezi University**  
-B.Eng. in College of Information Science and Technology, Shihezi  
+- **Shihezi University**  
+B.Eng. in [College of Information Science and Technology](https://cs.shzu.edu.cn/_t513/main.psp), Shihezi  
 2019.09 - 2023.06
 
+<!--
+## Education
+## Education
+
+<p align="left">
+  <strong>Shandong University</strong><br>
+  M.Eng. in <a href="https://cst.qd.sdu.edu.cn/">School of Cyber Science and Technology</a>, Qingdao<br>
+  2023.09 - now
+  <img src="sdu.png" alt="SDU Logo" align="right" height="50">
+</p>
+
+<p align="left">
+  <strong>Shihezi University</strong><br>
+  B.Eng. in College of Information Science and Technology, Shihezi<br>
+  2019.09 - 2023.06
+  <img src="shzu.png" alt="SHZU Logo" align="right" height="50">
+</p>
+
+## Education
+
+<p>
+  <span style="display: inline-block;">
+    <strong>Shandong University</strong><br>
+    M.Eng. in <a href="https://cst.qd.sdu.edu.cn/">School of Cyber Science and Technology</a>, Qingdao<br>
+    2023.09 - now
+  </span>
+  <img src="sdu.png" alt="SDU Logo" style="display: inline-block; vertical-align: middle; margin-left: 50px; height: 50px;">
+</p>
+
+<p>
+  <span style="display: inline-block;">
+    <strong>Shihezi University</strong><br>
+    B.Eng. in College of Information Science and Technology, Shihezi<br>
+    2019.09 - 2023.06
+  </span>
+  <img src="shzu.png" alt="SHZU Logo" style="display: inline-block; vertical-align: middle; margin-left: 50px; height: 50px;">
+</p>
+-->
 
 <!--
 
